@@ -55,7 +55,7 @@ Yêu cầu: một bench Frappe **v15** (Python 3.10+, Node 18+, MariaDB, Redis).
 Chạy trong thư mục bench (thư mục tạo ra từ `bench init`):
 
 ```bash
-bench get-app https://github.com/chanhchualam/chanhchualam
+bench get-app https://github.com/chanhchualam/chanhchualam12
 bench new-site order.local --admin-password admin --install-app order_management
 bench use order.local
 ```

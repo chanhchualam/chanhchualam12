@@ -8,6 +8,46 @@ App Frappe nhỏ để quản lý đơn hàng. Mỗi đơn gồm khách hàng, m
 
 Đã chạy thử trên **Frappe v15** và **MariaDB 10.11**.
 
+## Ảnh chụp màn hình
+
+Chụp từ Frappe v15 chạy thật, trên site cài mới và nạp dữ liệu mẫu (`order_management.demo.setup_demo`).
+
+### Tạo đơn: đơn giá tự điền theo mặt hàng, thành tiền do server tính
+
+Chọn khách hàng và mặt hàng thì đơn giá (450.000) tự điền. Sau khi lưu, thành tiền 3 × 450.000 = 1.350.000 do server tính.
+
+![Tạo đơn, đơn giá tự điền](docs/screenshots/02a-tao-don-don-gia-tu-dien.png)
+![Đơn đã lưu, thành tiền 1.350.000](docs/screenshots/02b-tao-don-da-luu.png)
+
+### Đổi trạng thái: Mới → Đã giao, sau đó đơn bị khóa
+
+![Xác nhận đổi trạng thái](docs/screenshots/03a-doi-trang-thai-xac-nhan.png)
+![Đơn đã giao không thể sửa](docs/screenshots/03b-don-da-giao-bi-khoa.png)
+
+### Báo cáo doanh thu theo ngày
+
+Mỗi ngày một dòng gồm số đơn và tổng thành tiền, chỉ tính đơn Đã giao.
+
+![Báo cáo doanh thu theo ngày](docs/screenshots/04-bao-cao-doanh-thu-theo-ngay.png)
+
+### Kiểm tra ở server
+
+Lưu đơn với số lượng 0 thì server từ chối với thông báo "Số lượng phải lớn hơn 0."
+
+![Server từ chối số lượng 0](docs/screenshots/05-server-tu-choi-so-luong-0.png)
+
+### Trang tổng quan và danh sách đơn
+
+![Trang tổng quan](docs/screenshots/01-trang-chu.png)
+![Danh sách đơn hàng](docs/screenshots/06-danh-sach-don.png)
+
+### Test tự động: 32 test, tất cả đều qua
+
+Hai ảnh dưới dựng lại từ kết quả chạy thật (tên test được rút gọn cho vừa khổ ảnh). Nguyên văn đầu ra nằm ở [docs/ket-qua-test.txt](docs/ket-qua-test.txt).
+
+![14 unit test](docs/screenshots/07-test-don-vi.png)
+![18 test tích hợp](docs/screenshots/08-test-tich-hop.png)
+
 ## 1. Cài đặt
 
 Yêu cầu: một bench Frappe **v15** (Python 3.10+, Node 18+, MariaDB, Redis). Nếu chưa có bench, xem [hướng dẫn cài Frappe](https://docs.frappe.io/framework/user/en/installation).

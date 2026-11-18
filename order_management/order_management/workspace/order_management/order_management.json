@@ -1,0 +1,88 @@
+{
+ "charts": [],
+ "content": "[{\"id\": \"om01\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Đơn hàng</b></span>\", \"col\": 12}}, {\"id\": \"om02\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Tạo đơn mới\", \"col\": 4}}, {\"id\": \"om03\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Đơn hàng\", \"col\": 4}}, {\"id\": \"om04\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Doanh thu theo ngày\", \"col\": 4}}, {\"id\": \"om10\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"om11\", \"type\": \"card\", \"data\": {\"card_name\": \"Danh mục\", \"col\": 4}}]",
+ "creation": "2026-11-18 00:12:46.758290",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "sell",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Quản lý đơn hàng",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Danh mục",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break",
+   "idx": 1
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Khách hàng",
+   "link_count": 0,
+   "link_to": "OM Customer",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link",
+   "idx": 2
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mặt hàng",
+   "link_count": 0,
+   "link_to": "OM Item",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link",
+   "idx": 3
+  }
+ ],
+ "modified": "2026-11-18 09:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Order Management",
+ "name": "Quản lý đơn hàng",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 0.5,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "New",
+   "label": "Tạo đơn mới",
+   "link_to": "OM Order",
+   "type": "DocType",
+   "idx": 1
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "format": null,
+   "label": "Đơn hàng",
+   "link_to": "OM Order",
+   "type": "DocType",
+   "idx": 2
+  },
+  {
+   "color": "Purple",
+   "doc_view": "",
+   "label": "Doanh thu theo ngày",
+   "link_to": "Daily Revenue",
+   "report_ref_doctype": "OM Order",
+   "type": "Report",
+   "idx": 3
+  }
+ ],
+ "title": "Quản lý đơn hàng"
+}
